@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="styles/layout/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img class="header__logo-pic" src="./images/content/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header__main">
+                    <div class="header__up">
+                        <div class="header__lang">
+                            <a href="#" class="header__lang-link header__lang-link_active">
+                                <img class="header__lang-pic" src="./images/icons/rus.png" alt="rus">
+                            </a>
+                            <a href="#" class="header__lang-link">
+                                <img class="header__lang-pic" src="./images/icons/eng.png" alt="eng">
+                            </a>
+                        </div>
+                        <div class="header__dealer">
+                            <a href="#" class="header__dealer-link">Как стать дилером?</a>
+                            <a href="#" class="header__dealer-link">Дилерская зона</a>
+                        </div>
+                    </div>
+                    <div class="header__down">
+                        <ul class="header__nav">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link header__nav-link_active">Каталог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Конструктор</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Галерея</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Прайсы</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">О компании</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Где купить?</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Обратная связь</a>
+                            </li>
+                        </ul>
+                        <div class="header__search">
+                            <form class="header__form">
+                                <input class="header__input" type="text" name="search" placeholder="Поиск по каталогу">
+                                <a href="#" class="header__btn">
+                                    <svg class="header__btn-icon">
+                                        <use xlink:href="./images/icons/sprite.svg#search"></use>
+                                    </svg>
+                                </a>
+                            </form>
+                            <form class="header__form header__form_1200">
+                                <input class="header__input header__input_1200" type="text" name="search" placeholder="Поиск по каталогу">
+                                <a href="#" class="header__btn header__btn_1200">
+                                    <svg class="header__btn-icon header__btn-icon_1200">
+                                        <use xlink:href="./images/icons/sprite.svg#search"></use>
+                                    </svg>
+                                </a>
+                            </form>
+                            <a href="#" class="header__btn header__btn_show">
+                                <svg class="header__btn-icon header__btn-icon_show">
+                                    <use xlink:href="./images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__tablet">
+                        <div class="header__navl">
+                            <div class="navl__btn">
+                                <svg class="navl__icon">
+                                    <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                </svg> Каталог
+                            </div>
+                            <ul class="navl__list">
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_1"></use>
+                                        </svg>
+                                        Модели
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_2"></use>
+                                        </svg>
+                                        Графика блоков
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_3"></use>
+                                        </svg>
+                                        Материалы
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_4"></use>
+                                        </svg>
+                                        Обложки, портфолио
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_5"></use>
+                                        </svg>
+                                        Деловая галантерея
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_6"></use>
+                                        </svg>
+                                        Freestick и календари
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_7"></use>
+                                        </svg>
+                                        Персонализация и доп. услуги
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_8"></use>
+                                        </svg>
+                                        Упаковка
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navl__item">
+                                    <a href="#" class="navl__link">
+                                        <svg class="navl__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#navl_9"></use>
+                                        </svg>
+                                        Complete <span class="navl__desc">Готовые изделия со склада</span>
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__logomob">
+                            <a href="#" class="header__logomob-link">
+                                <img class="header__logomob-pic" src="./images/content/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="header__searchmob">
+                            <form class="header__formmob">
+                                <input class="header__inputmob" type="text" name="search" placeholder="Поиск...">
+                                <a href="#" class="header__btnmob">
+                                    <svg class="header__btnmob-icon">
+                                        <use xlink:href="./images/icons/sprite.svg#search"></use>
+                                    </svg>
+                                </a>
+                            </form>
+                            <a href="#" class="header__btnmob-show">
+                                <svg class="header__btnmob-icon-show">
+                                    <use xlink:href="./images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__navr">
+                            <div class="navr__burger">
+                                <div class="navr__burger-link"></div>
+                            </div>
+                            <form class="header__formmobile">
+                                <input class="header__inputmobile" type="text" name="search" placeholder="Поиск...">
+                                <a href="#" class="header__btnmobile">
+                                    <svg class="header__btnmobile-icon">
+                                        <use xlink:href="./images/icons/sprite.svg#search"></use>
+                                    </svg>
+                                </a>
+                            </form>
+                            <ul class="navr__list">
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Каталог
+                                        <svg class="navr__arrow-enter">
+                                            <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Конструктор</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Галерея</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Прайсы</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">О копании</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Где купить</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Обратная связь</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Новости</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">Посмотреть видео</a>
+                                </li>
+                                <li class="navr__item">
+                                    <a href="#" class="navr__link">
+                                        <svg class="navr__link-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#pdf"></use>
+                                        </svg>
+                                        Скачать каталог
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main-content">
+                <h1 class=" title title_main">Ежедневники Адъютант® оптом от производителя</h1>
+                <div class="filter container">
+                    <div class="filter__col">
+                        <h3 class="filter__title" data="0">
+                            <a href="#" class="filter__title-link">Изделия</a>
+                            <svg class="filter__icon filter__icon_arrow">
+                                <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                            </svg>
+                            <svg class="filter__icon filter__icon_remove">
+                                <use xlink:href="./images/icons/sprite.svg#remove"></use>
+                            </svg>
+                        </h3>
+                        <ul class="filter__list">
+                            <li class="filter__item filter__item_active" data"0">Ежедневник</li>
+                            <li class="filter__item" data"0">Еженедельник</li>
+                            <li class="filter__item" data"0">Планинг</li>
+                            <li class="filter__item" data"0">Записная книжка</li>
+                            <li class="filter__item" data"0">Индивидуальный</li>
+                        </ul>
+                    </div>
+                    <div class="filter__col">
+                        <h3 class="filter__title" data="1">
+                            <a href="#" class="filter__title-link">Модель</a>
+                            <svg class="filter__icon filter__icon_arrow">
+                                <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                            </svg>
+                            <svg class="filter__icon filter__icon_remove">
+                                <use xlink:href="./images/icons/sprite.svg#remove"></use>
+                            </svg>
+                        </h3>
+                        <ul class="filter__list">
+                            <li class="filter__item" filter="1" data="1">Классика (С)</li>
+                            <li class="filter__item" filter="2" data="1">Модерн (М)</li>
+                            <li class="filter__item" filter="3" data="1">Хайтек (Н)</li>
+                            <li class="filter__item" filter="4" data="1">Авангард</li>
+                            <li class="filter__item" filter="5" data="1">Суперобложка</li>
+                            <li class="filter__item" filter="6" data="1">Портфолио</li>
+                        </ul>
+                    </div>
+                    <div class="filter__col">
+                        <h3 class="filter__title" data="2">
+                            <a href="#" class="filter__title-link">Вид пружины</a>
+                            <svg class="filter__icon filter__icon_arrow">
+                                <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                            </svg>
+                            <svg class="filter__icon filter__icon_remove">
+                                <use xlink:href="./images/icons/sprite.svg#remove"></use>
+                            </svg>
+                        </h3>
+                        <ul class="filter__list">
+                            <li class="filter__item" filter="7" data="2">Шитый</li>
+                            <li class="filter__item" filter="8" data="2">Швейно-термоклеевой</li>
+                            <li class="filter__item" filter="9" data="2">На пружине</li>
+                            <li class="filter__item" filter="10" data="2">Кольцевой механизм</li>
+                        </ul>
+                    </div>
+                    <div class="filter__col">
+                        <h3 class="filter__title" data="3">
+                            <a href="#" class="filter__title-link">Вид блока</a>
+                            <svg class="filter__icon filter__icon_arrow">
+                                <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                            </svg>
+                            <svg class="filter__icon filter__icon_remove">
+                                <use xlink:href="./images/icons/sprite.svg#remove"></use>
+                            </svg>
+                        </h3>
+                        <ul class="filter__list">
+                            <li class="filter__item" filter="11" data="3">Датированный</li>
+                            <li class="filter__item" filter="12" data="3">Не датированный</li>
+                        </ul>
+                    </div>
+                    <div class="filter__col">
+                        <h3 class="filter__title" data="4">
+                            <a href="#" class="filter__title-link">Формат</a>
+                            <svg class="filter__icon filter__icon_arrow">
+                                <use xlink:href="./images/icons/sprite.svg#down_arrow"></use>
+                            </svg>
+                            <svg class="filter__icon filter__icon_remove">
+                                <use xlink:href="./images/icons/sprite.svg#remove"></use>
+                            </svg>
+                        </h3>
+                        <ul class="filter__list filter__list_format">
+                            <li class="filter__item_format" filter="13" data="4">10х16 см</li>
+                            <li class="filter__item_format" filter="14" data="4">13х21 см</li>
+                            <li class="filter__item_format" filter="15" data="4">15х21 см</li>
+                            <li class="filter__item_format" filter="16" data="4">20х26 см</li>
+                        </ul>
+                    </div>
+                    <div class="empty"></div>
+                </div>
+                <div class="info container">
+                    <div class="info__text">
+                        <p>ТМ «Адъютант» предлагает недатированные, полудатированные и датированные  ежедневники. У нас вы можете создать индивидуальные ежедневники со стандартными блоками под заказ или  купить готовые недатированные и датированные ежедневники на 2019 год со склада. Диапазон форматов: от 10x16 до 20x26 см. Минимальный тираж — от 20 штук. Срок исполнения — от 10 рабочих дней.</p>
+                        <p>Также вы можете заказать ежедневники с индивидуальным блоком и поместить ваш логотип или контактную информацию на каждую страницу блока. Индивидуальная датировка — от 500 штук, недатированные индивидуальные блоки — от 300 штук.</p>
+                    </div>
+                    <div class="info__pic">
+                        <div class="info__layer">
+                            <img class="info__layer-1" src="./images/content/pic_2.png">
+                            <img class="info__layer-2" src="./images/content/pic_1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider container container_ml30">
+                    <h2 class="title"><a href="#" class="title_link">Модели</a> и варианты обложек</h2>
+                    <ul class="slider__list">
+                        <li class="slider__item">
+                            <img src="./images/content/slider_1.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">Твердая, с поролоном и без (<<Софт>>, <<Хард>>)</div>
+                        </li>
+                        <li class="slider__item">
+                            <img src="./images/content/slider_2.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">Гибкая, с хлястиком в крое и без (<<Стреп>>, <<Флекс>>)</div>
+                        </li>
+                        <li class="slider__item">
+                            <img src="./images/content/slider_3.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">Вырубка на одном уровне с блоком (<<Авангард>>)</div>
+                        </li>
+                        <li class="slider__item">
+                            <img src="./images/content/slider_4.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">С клапаном на магните (<<Флап>>)</div>
+                        </li>
+                        <li class="slider__item">
+                            <img src="./images/content/slider_5.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">Со вставным корешком на резинке (<<Спайн>>)</div>
+                        </li>
+                        <li class="slider__item">
+                            <img src="./images/content/slider_6.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">С открытой, полузакрытой и закрытой пружиной (<<Хайтек>>)</div>
+                        </li>
+                        <li class="slider__item">
+                            <img src="./images/content/slider_7.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">Съемная, ежедневник на пружине или на кольцах (<<Портфолио>>)</div>
+                        </li>
+                        <li class="slider__item">
+                            <img src="./images/content/slider_8.png" alt="pic" class="slider__pic">
+                            <div class="slider__desc">Съемная, надевается на картонную обложку (<<Суперобложка>>)</div>
+                        </li>
+                    </ul>
+                    <button class="slider__btn slider__btn_next">
+                        <svg class="slider__icon">
+                            <use xlink:href="./images/icons/sprite.svg#slider_arrow"></use>
+                        </svg>                        
+                    </button>
+                    <button class="slider__btn slider__btn_prev">
+                        <svg class="slider__icon">
+                            <use xlink:href="./images/icons/sprite.svg#slider_arrow"></use>
+                        </svg>                        
+                    </button>
+                </div>
+                <div class="block container">
+                    <h2 class="title">
+                        <a href="#" class="title_link">Материалы</a> обложек
+                    </h2>
+                    <div class="block__row">
+                        <div class="block__pic">
+                            <a href="#" class="block__pic-link">
+                                <img src="./images/content/politra.png" alt="politra" class="block__layer">
+                            </a>
+                        </div>
+                        <div class="block__desc">
+                            <ul class="block__desc-list">
+                                <li class="block__desc-item">Полиуретан (PU-материалы)</li>
+                                <li class="block__desc-item">Натуральная кожа</li>
+                                <li class="block__desc-item">Материалы на бумажной основе</li>
+                                <li class="block__desc-item">Ламинат</li>
+                                <li class="block__desc-item">Эко-материалы</li>
+                            </ul>
+                            <div class="block__desc-text">Многообразие фактур и цветов: всего 60 видов переплетных материалов, более 200 цветовых решений.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block container">
+                    <h2 class="title">Обрез ежедневника</h2>
+                    <div class="block__row block__row_2">
+                        <div class="block__desc_2">
+                            <ul class="block__desc-list">
+                                <li class="block__desc-item">Классический белый</li>
+                                <li class="block__desc-item">Цвеотной</li>
+                                <li class="block__desc-item">С печатью</li>
+                                <li class="block__desc-item">Золотой или серебристый</li>
+                            </ul>
+                        </div>
+                        <div class="block__pic_2">
+                            <img src="./images/content/picture.png" alt="picture" class="block__layer block__layer-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="block container">
+                    <h2 class="title">
+                        <a href="#" class="title_link">Персонализация</a>
+                    </h2>
+                    <div class="block__row">
+                        <div class="block__pic">
+                            <a href="#" class="block__pic-link block__pic-link-3">
+                                <img src="./images/content/notebook.png" alt="notebook" class="block__layer block__layer-3">
+                            </a>
+                        </div>
+                        <div class="block__desc">
+                            <ul class="block__desc-list">
+                                <li class="block__desc-item">Комбинируем материалы на обложке</li>
+                                <li class="block__desc-item">Выполняем блинтовое и фольгированное тиснение, оригинальную фигурную вырубку</li>
+                                <li class="block__desc-item">Печатаем любые принты на переплётных материалах</li>
+                                <li class="block__desc-item">Наносим рекламную и контактную информацию компании заказчика на обложку и блок</li>
+                                <li class="block__desc-item">Всего более 40 вариантов персонализации и дополнительных услуг</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq container">
+                    <img src="./images/content/faq.png" alt="faq" class="faq__pic">
+                    <div class="faq__text">Чтобы купить ежедневники оптом от производителя, свяжитесь с нашими региональными представителями в разделе <a href="#" class="faq__link">Где купить</a> или воспользуйтесь <a href="#" class="faq__link">Конструкторов ежедневников</a>.</div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__col footer__col_logo">
+                    <img src="./images/content/logo_footer.png" alt="logo" class="footer__logo">
+                    <div class="footer__text">Адъютант®<br>На страже вашего времени</div>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__socials-icon footer__socials-icon_fb">
+                            <img src="./images/icons/fb.png" alt="facebook" class="footer__socials-fb">
+                        </a>
+                        <a href="#" class="footer__socials-icon footer__socials-icon_yt">
+                            <img src="./images/icons/yt.png" alt="youtube" class="footer__socials-yt">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h2 class="title title_footer">Меню</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Каталог</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конструктор</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Галерея</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О компании</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Видео</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Где купить?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Обратная связяь</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h2 class="title title_footer">Каталог</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Модели</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Графика блоков</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Материалы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Обложки, портфолио</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Деловая галантелея</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Freestick и календари</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Персонализация и доп. услуги</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Упаковка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Complete. Готовые изделия со склада</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h2 class="title title_footer">Региональные представители</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Москва</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Санкт-Петербург</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Центральный федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Северо-Западный федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Дальневосточный федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Уральский федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Сибирский федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Приволжский федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Южный федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Республика Беларусь</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Северо-Кавказский федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Крымский федеральный округ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Латвия</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Таджикистан</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Казахстан</a>
+                        </li>
+                        <li class="footer__item">
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>

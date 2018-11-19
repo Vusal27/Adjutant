@@ -1,0 +1,26 @@
+.faq {
+    display: flex;
+    align-items: center;
+    @include tablet() {
+        flex-direction: column;
+    }
+    &__pic {
+        margin-right: 30px;
+        @include tablet() {
+            width: 50%;
+            margin: 0 auto 30px;
+        }
+    }
+    &__text {
+        max-width: 630px;
+        @include tablet() {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &__link {
+        color: $oranges;
+        text-decoration: underline;
+    }
+}

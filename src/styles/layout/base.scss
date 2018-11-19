@@ -1,0 +1,90 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'rubik', helvetica, sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+:root {
+    font-size: 16px;
+    @include laptop {
+        font-size: 15px;
+    }
+    @include tablet {
+        font-size: 14px; 
+    }
+    @include phone {
+        font-size: 13px;
+    }
+}
+input, textarea {
+    box-sizing: border-box;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    color: $blacks;
+    font-size: 14px;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto 80px;
+    &_ml30 {
+        margin-left: 30px;
+        width: 95%;
+        @include responsive() {
+            overflow: hidden;
+            margin: 0 auto 80px;
+            width: 1170px;
+        }
+    }
+    @include laptop() {
+        width: 93%;
+    }
+    @include laptop-small() {
+        width: 95%;
+    }
+    @include tablet() {
+        width: 100%;
+    }
+}
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'pf_din_text_comp', Helvetica, sans-serif;
+    font-weight: bold;
+    &_main {
+        font-size: 40px;
+        margin-bottom: 50px;
+        @include phone() {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+    &_link {
+        color: $blacks;
+        text-decoration: underline;
+        &:hover {
+            color: $oranges;
+        }
+    }
+    &_footer {
+        text-align: start;
+    }
+}

@@ -1,0 +1,40 @@
+.info  {
+    display: flex;
+    justify-content: space-between;
+    @include tablet() {
+        flex-wrap: wrap-reverse;
+    }
+    &__text {
+        width: 49%;
+        @include tablet() {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    &__pic {
+        width: 49%;
+        height: 280px;
+        background-image: url("./images/background/background_0.png");
+        background-size: 100% 140%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        display: flex;
+        justify-content: center;
+        @include tablet() {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    &__layer {
+        position: relative;
+        width: 280px;
+        text-align: end;
+        margin-top: -50px;
+        filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3));
+        &-2 {
+            position: absolute;
+            left: 0px;
+            top: 0;
+        }
+    }
+}
