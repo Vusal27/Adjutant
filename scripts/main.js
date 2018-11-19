@@ -373,3 +373,19 @@ $(window).resize(function() {
     });
   }
 });
+//// Обработка события клик на пункт меню
+var menuItems = document.querySelectorAll(".header__nav-link");
+for (const it of menuItems) {
+    it.addEventListener('click', activeMenu);
+}
+function activeMenu() {
+    target = event.target;
+    sibling = target.nextElementSibling;
+    for (const it of menuItems) {
+        if (it !== target) {
+            it.classList.remove('header__nav-link_active');
+        } else {
+            it.classList.add('header__nav-link_active');
+        }
+    } 
+}
